@@ -1,31 +1,25 @@
 ---
-layout: default
 ---
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/jpg" href={{ site.favicon }}>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
 
- <div class="post-container">
+{% include header.html %}
+{% include about.html %}
+{% include research.html %}
+{% include teaching.html %}
+{% include contact.html %}
+{% include footer.html %}
 
-  <h2 class="post-title">Blog</h2>
-
-  <hr>
-
-  {% for post in site.posts %}
-    <div class ="post-preview">
-      <span class="post-title">
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-          {{ post.title }}
-        </a>
-      </span>
-
-      <span class="post-time">
-        <p>{{ post.date | date: "%b %-d, %Y" }}</p>
-      </span>
-
-
-    </div>
-
-    {% endfor %}
-
-
-
-</div>
+<script src="/assets/js/jquery-2.1.1.min.js"></script>
+<script src="/assets/js/functions.js" type="text/javascript"></script>
+</body>
+</html>

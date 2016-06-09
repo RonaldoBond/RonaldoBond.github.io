@@ -1,20 +1,47 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-baseurl: "" # the subpath of your site, e.g. /blog
-#url: "http://yourdomain.com" # the base hostname & protocol for your site
-
-# Sidebar settings
-description: One sentence introducing yourself or what you do
-
-# Social icons
-facebook: username
-linkedin: username
-github: username
-deviantart: username
-codepen: username
-
-footer: © Taken theme
+title: Henry Jekyll
 
 # Build settings
 markdown: kramdown
+permalink: pretty
+
+favicon: "/assets/img/temp_chem.jpg"
+
+port: 3000
+url: http://localhost:3000
+
+sass:
+  sass_dir: assets/css
+  style: :nested
+
+# Add bibliography
+gems: ['jekyll/scholar']
+
+scholar:
+  style: assets/bib/_ieee-with-url.csl
+  locale: en
+
+  sort_by: none
+  order: ascending
+
+  group_by: none
+  group_order: ascending
+
+  source: assets/bib
+  bibliography: _mybib.bib
+  bibliography_template: "{{reference}}"
+
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: false
+  bibtex_filters:
+  - superscript
+  - latex
+  - HTML
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
