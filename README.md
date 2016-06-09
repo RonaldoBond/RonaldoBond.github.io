@@ -1,10 +1,25 @@
-# jekyllDecent
-[![Build Status](https://travis-ci.org/jwillmer/jekyllDecent.svg?branch=gh-pages)](https://travis-ci.org/jwillmer/jekyllDecent) 
-[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
-[![Release v1.1.5](https://img.shields.io/badge/release-v1.1.5-blue.svg)](https://github.com/jwillmer/jekyllDecent/releases/tag/1.1.5)
+# taken
 
-This is a blog template for a static site generator named [Jekyll](https://jekyllrb.com/docs/home/) based on a [Ghost](https://ghost.org) template named [Decent](https://github.com/serenader2014/decent). 
+Taken is a minimalist two-column jekyll theme based on chapter tumblr theme 
 
-Installation instructions, features, previews and more can be found in the [GitHub generated blog](http://jwillmer.github.io/jekyllDecent). This blog is automatically generated out of the source code in the `gh-pages` branch. If you like to see the theme in production have a look at [jwillmer.de](http://jwillmer.de).
+![Taken](https://github.com/vfalanis/taken/blob/master/Taken.png)
 
-[![](./media/img/2016-06-08-Readme-front-page-previewe.jpg)](http://jwillmer.github.io/jekyllDecent)
+## Features
+* Flickr feed
+* Disqus
+* more ...
+
+## Demo
+You can see a live demo of "taken" [here](http://vfalanis.github.io/taken)
+
+## Instructions
+
+1. Fork this repository
+2. Clone the repository to your computer.<br />`git clone https://github.com/YOURUSERNAME/taken.git` 
+3. Run it.<br />`jekyll serve`
+4. Go to http://127.0.0.1:4000.
+
+## To do list:
+* Categories support
+* Add portfolio section
+* More...
